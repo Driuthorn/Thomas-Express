@@ -101,6 +101,9 @@
     <Compile Include="Infrastructure\IoC\ContainerExtensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RabbitMq\BasicPropertiesConfiguration.cs" />
+    <Compile Include="RabbitMq\RabbitMqConfiguration.cs" />
+    <Compile Include="RabbitMq\Sender.cs" />
     <Compile Include="ThomasExpressProducerService.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -112,8 +115,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ThomasExpressProducer.Configuration\ThomasExpressProducer.Configuration.csproj">
-      <Project>{DC639927-6B44-4604-B2C6-3D434DA5A661}</Project>
+      <Project>{859A6778-A188-4EBC-B2E2-703B46490851}</Project>
       <Name>ThomasExpressProducer.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ThomasExpressProducer.Data\ThomasExpressProducer.Data.csproj">
+      <Project>{8979C110-6A7E-41BB-B6B0-19E4F313BD1F}</Project>
+      <Name>ThomasExpressProducer.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
